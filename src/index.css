@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-container {
+  @apply max-w-screen-2xl mx-auto container px-5;
+}
+.logo-animation-wrapper {
+  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+}
+.logo-wrapper {
+  animation: 39.52s linear -19.76s infinite normal none running scrolling-lagging;
+}
+@keyframes scrolling-lagging {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
+.testimonial-slider .swiper-slide {
+  height: auto;
+}
+.testimonial-slider .swiper-button-prev,
+.testimonial-slider .swiper-button-next {
+  width: 24px;
+  height: 24px;
+}
+.testimonial-slider .swiper-button-prev::after,
+.testimonial-slider .swiper-button-next::after {
+  font-size: 16px;
+  color: #21272a;
+}
