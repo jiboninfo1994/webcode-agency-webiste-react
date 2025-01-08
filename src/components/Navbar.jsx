@@ -88,7 +88,10 @@ function Navbar() {
         <div className="navbar-end gap-4">
           {user ? (
             <>
-              <Link className="inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg">
+              <Link
+                to="/dashboard"
+                className="inline-flex items-center p-2 hover:bg-gray-100 focus:bg-gray-100 rounded-lg"
+              >
                 <div className="hidden md:flex md:flex-col md:items-end md:leading-tight">
                   {user?.displayName && (
                     <span className="font-semibold text-primaryText">
